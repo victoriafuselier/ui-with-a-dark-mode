@@ -120,6 +120,7 @@ h2 {
 
 .download-btn {
     background-color: var(--primary);
+    color: var(--footer-bg);
     border: none;
     border-radius: 5px;
     font-family: 'Inter', sans-serif;

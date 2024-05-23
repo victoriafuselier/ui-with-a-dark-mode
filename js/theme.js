@@ -11,11 +11,9 @@ function addLightStyles() {
         #hero-span {
             color: var(--primary);
         }
-
         #features-heading {
             color: var(--text-primary);
         }
-
         #features-section i {
             color: var(--text-secondary);
             opacity: 0.4;
@@ -35,7 +33,6 @@ function addDarkStyles() {
             background-clip: text;
             -webkit-background-clip: text;
         }
-
         #features-section i {
             background-image: linear-gradient(to bottom, orange, white);
             color: transparent;
@@ -79,6 +76,10 @@ function setDarkMode() {
     setDarkColors();
     removeStyles();
     addDarkStyles();
+    if (themeIcon.classList.contains('fa-moon')) {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+    }
 }
 
 function setLightMode() {
@@ -86,6 +87,10 @@ function setLightMode() {
     setLightColors();
     removeStyles();
     addLightStyles();
+    if (themeIcon.classList.contains('fa-sun')) {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+    }
 }
 
 window.addEventListener('load', (e) => {

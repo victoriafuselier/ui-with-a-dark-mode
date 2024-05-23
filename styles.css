@@ -196,14 +196,15 @@ h3 {
 
 footer {
     min-height: 13vh;
-    padding: 30px 70px;
+    padding: 40px 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 footer ul {
     list-style-type: none;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
 }
 
 footer li {
@@ -271,11 +272,6 @@ a:visited {
         max-width: 450px;
     }
 
-    footer {
-        flex-direction: row;
-        justify-content: space-evenly; 
-    }
-
     .nav-link-container,
     #hero-right,
     #footer-middle,
@@ -304,6 +300,10 @@ a:visited {
     #feature-bottom-section {
         display: flex;
         align-items: center;
+    }
+
+    footer ul {
+        font-size: 0.8rem;
     }
 }
 

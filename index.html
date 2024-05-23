@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="lightbulb.png">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/38b77c3a56.js" crossorigin="anonymous"></script>
     <title>Lightz.js</title>
@@ -41,7 +42,7 @@
     <main>
         <section id="hero-section">
             <div id="hero-left">
-                <h1>Welcome to <span>Lightz.js</span><br>Illuminating Your Web Development!</h1>
+                <h1>Welcome to <span id="hero-span">Lightz.js</span><br>Illuminating Your Web Development!</h1>
                 <p>Are you tired of the same old, cumbersome JavaScript libraries that weigh down your web development projects? Look no further! Lightz.js is here to transform your coding experience and brighten your path to web development success.</p>
                 <button class="download-btn">Download lightz.js</button> 
             </div>
@@ -50,7 +51,7 @@
             </div>       
         </section>
         <section id="features-section">
-            <h2>Features That Shine Bright:</h2>
+            <h2><span id="features-heading">Features That Shine Bright:</span></h2>
             <div id="feature-top-section">
                 <div class="feature-container">
                     <i class="fa-solid fa-bolt"></i>
@@ -92,9 +93,6 @@
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Documentation</a></li>
-            <li id="more-btn-container">
-                <button id="more-btn">See more...</button>
-            </li>
         </ul>
         <ul id="footer-middle">
             <li><a href="#">Blog</a></li>
@@ -111,5 +109,6 @@
             <li><a href="#">Careers</a></li>
         </ul>
     </footer>
+    <script src="js/theme.js"></script>
 </body>
 </html>

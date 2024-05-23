@@ -25,7 +25,7 @@
 
 body {
     font-family: "Inter", sans-serif;
-    color: var(--text-primary);
+    color: var(--text-secondary);
 }
 
 nav {
@@ -41,20 +41,22 @@ nav ul {
     padding: 0 20px;
 }
 
-.nav-link-container,
-#footer-middle,
-#footer-right {
+.nav-link-container {
     display: none;
 }
 
 #logo-div {
     font-size: 1.1rem;
     font-weight: 800;
+    margin-right: auto;
+}
+
+#logo-div,
+#logo-div a {
     background-image: linear-gradient(to right, orange, white);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    margin-right: auto;
 }
 
 #logo-div i {
@@ -66,6 +68,8 @@ nav ul {
     background-color: #3D4346;
     border: none;
     margin-right: 10px;
+    z-index: 2;
+    position: relative;
 }
 
 #theme-btn i {
@@ -76,7 +80,7 @@ nav ul {
 nav,
 footer {
     background-color: var(--nav-bg);
-    color: var(--text-primary);
+    color: var(--text-secondary);
 }
 
 #hero-section {
@@ -88,8 +92,14 @@ h2 {
     font-size: 1.25rem;
 }
 
+h1,
+h3 {
+    color: var(--text-primary);
+}
+
 h2 {
     text-align: center;
+    color: var(--text-secondary);
 }
 
 #hero-left {
@@ -97,7 +107,7 @@ h2 {
     margin: 0 auto;
 }
 
-#hero-left span {
+#hero-span {
     color: var(--primary);
     font-size: 1.5rem;
     font-weight: 800;
@@ -123,8 +133,8 @@ nav .download-btn {
 
 #hero-section .download-btn {
     font-size: 0.9rem;
-    color: var(--hero-bg);
     padding: 15px 20px;
+    color: var(--hero-bg);
 }
 
 #hero-right {
@@ -195,7 +205,7 @@ footer ul {
     font-size: 0.75rem;
 }
 
-footer li:not(:last-of-type) {
+footer li {
     margin-bottom: 7px;
 }
 
@@ -217,8 +227,9 @@ button,
 
 a,
 a:visited {
-    color: inherit;
+    color: var(--text-secondary);
     text-decoration: none;
+    font-weight: 600;
 }
 
 
